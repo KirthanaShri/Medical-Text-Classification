@@ -26,8 +26,9 @@
 ## Feature Engineering
 - Utilized the TF-IDF vectorizer to convert each clinical note into a vector feature space, as `TF_IDF` is optimal for classification technique.
 - Methods For Feature Selection
-  - Univariate feature selection method
-  - Feature Importance method
+  + Univariate feature selection method - Done using SELECTKBEST() that selects top k features based on the specified scoring function. It works by evaluating each column individually using a statistical test and selects top k features with the highest scores
+
+  + Feature Importance method
 
 ## Modeling
 - Modeled the training process by splitting the dataset into 80% training, 10% validation, and 10% test sets. We utilized GridSearchCV for hyperparameter tuning and found that the SVM
